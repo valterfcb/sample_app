@@ -9,6 +9,9 @@ end
 ##################################################
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
+#Use bcrypt function passowrd hashing so that attacker's can loging even if theu
+#manage to obtain a copy of the database
+gem 'bcrypt', '~> 3.1.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 #Bootstrap-Sass gem
