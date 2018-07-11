@@ -13,8 +13,6 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", help_path
     assert_select "a[href=?]", about_path
     assert_select "a[href=?]", contact_path
-    #Nao estou a perceber estas duas linhas de codigo abaixo do comentario?????, sao
-    #correspondentes a Lisnting 5.36 do rails tutorial
     get contact_path
     assert_select "title", full_title("Contact")
   end

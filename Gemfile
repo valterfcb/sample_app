@@ -7,6 +7,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 ##################################################
+# Jquery dependencies
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'rails-ujs', '~> 0.1.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 #Use bcrypt function passowrd hashing so that attacker's can loging even if theu
