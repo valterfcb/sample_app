@@ -3,3 +3,9 @@ valter:
   name: Valter Bento
   email: valter.fcb.wdd@gmail.com
   password_digest: <%= User.digest('password') %>
+
+daniel:
+  name: daniel sousa
+  email: danielsousa@gmail.com
+  password_digest: <%= User.digest('password') %>
+
