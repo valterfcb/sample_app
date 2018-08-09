@@ -3,9 +3,28 @@ valter:
   name: Valter Bento
   email: valter.fcb.wdd@gmail.com
   password_digest: <%= User.digest('password') %>
+  admin: true
 
 daniel:
   name: daniel sousa
   email: danielsousa@gmail.com
   password_digest: <%= User.digest('password') %>
+
+braga:
+  name: antonio lopes
+  email: antoniolopes@gmail.com
+  password_digest: <%= User.digest('password') %>
+
+palma:
+  name: joao palma
+  email: joaopalma@gmail.com
+  password_digest: <%= User.digest('password') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name: <%= "User #{n}" %>
+  email: <%= "user-#{n}@gerados.io" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>
+
 
